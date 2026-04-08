@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéDex API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>PokéDex</h1>
+
+    <section class="formulario">
+            <input type="text" id="input-pokemon" placeholder="Nome">
+            <input type="text" id="input-pokemon" placeholder="id">
+
+            <button id="btn-buscar">Buscar</button>
+    </section>
+
+    <secction id="area-resultado">
+        <img id="pokemon-imagem">
+
+        <h2 id="pokemon-nome"></h2>
+
+        <div id="pokemon-tipos"></div>
+    </section>
+
+    <section id="area-erro">
+        <p id="mensagem-erro"></p>
+    </section>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
