@@ -1,0 +1,52 @@
+.oculto {
+    display: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(img/thumbbig-1243956.webp);
+    min-height: 100vh;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    text-shadow: black 1px 0 10px;
+    color: #FFCB05;
+}
+
+.formulario {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+input {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 50vh;
+}
+
+button {
+    background-color: #CC0000;
+    color: #FFFFFF;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #CC0000;
+}
