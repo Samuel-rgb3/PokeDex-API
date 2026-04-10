@@ -19,8 +19,10 @@ btnBuscar.addEventListener("click", function() {
 });
 
 async function buscarPokemon(nome) {
+    areaResultado.classList.add("oculto");
+    areaErro.classList.add("oculto");
     try {
-        const resposta = await fetch("https://pokeapi.co/api/v2/pokemon/" + nome);
+        const resposta = await fetch("https://pokeapi.co/api/v2/pokemon/" + nome.toLowerCase());
 
         if (!resposta.ok) {
             throw new Error("Pokémon não encontrado");
@@ -29,10 +31,11 @@ async function buscarPokemon(nome) {
 
         const nomePokemon = dados.name;
         const urlImagem = dados.sprites.front_default;
-        const pokemonTipos = dados.types[0].type.name;
+        const tipoPokemon = dados.types[0].type.name;
 
         pokemonImagem.setAttribute("src", urlImagem);
         pokemonNome.textContent = nomePokemon;
+        pokemonTipos.textContent = tipoPokemon;
         areaResultado.classList.remove("oculto")
 
     } catch (erro) {
