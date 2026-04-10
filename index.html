@@ -7,24 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="img/pokemon-logo.png" alt="Imagem da logo">
+    <img src="img/pokemon-logo.png" alt="Imagem da logo" id="logo">
 
     <section class="formulario">
             <input type="text" id="input-pokemon" placeholder="Nome">
 
             <button id="btn-buscar">Buscar</button>
-    
-            <div id="area-resultado">
-                <img id="pokemon-imagem">
 
-                <h2 id="pokemon-nome"></h2>
+        <div id="area-resultado" class="oculto">
+            <img id="pokemon-imagem">
 
-                <div id="pokemon-tipos"></div>
-            </div>
+            <h2 id="pokemon-nome"></h2>
+
+            <div id="pokemon-tipos"></div>
+        </div>
             
-            <div id="area-erro">
-                <p id="mensagem-erro"></p>
-            </div>
+        <div id="area-erro" class="oculto">
+            <p id="mensagem-erro"></p>
+        </div>
     </section>
 
     <script src="script.js" defer></script>
