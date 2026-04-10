@@ -7,25 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>PokéDex</h1>
+    <img src="img/pokemon-logo.png" alt="Imagem da logo">
 
     <section class="formulario">
             <input type="text" id="input-pokemon" placeholder="Nome">
-            <input type="text" id="input-pokemon" placeholder="id">
 
             <button id="btn-buscar">Buscar</button>
-    </section>
+    
+            <div id="area-resultado">
+                <img id="pokemon-imagem">
 
-    <secction id="area-resultado">
-        <img id="pokemon-imagem">
+                <h2 id="pokemon-nome"></h2>
 
-        <h2 id="pokemon-nome"></h2>
-
-        <div id="pokemon-tipos"></div>
-    </section>
-
-    <section id="area-erro">
-        <p id="mensagem-erro"></p>
+                <div id="pokemon-tipos"></div>
+            </div>
+            
+            <div id="area-erro">
+                <p id="mensagem-erro"></p>
+            </div>
     </section>
 
     <script src="script.js" defer></script>
