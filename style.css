@@ -4,7 +4,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(img/thumbbig-1243956.webp);
+    background-image: url(img/fundo-de-parede.jpg);
     min-height: 100vh;
     display: flex;
     background-size: cover;
@@ -14,18 +14,22 @@ body {
     padding: 20px;
 }
 
-h1 {
-    text-shadow: black 1px 0 10px;
-    color: #FFCB05;
+img {
+    width: 30%;
+    margin-bottom: 0;
 }
-
+#pokemon-imagem {
+    width: 120px;
+}
 .formulario {
     background-color: rgba(255, 255, 255, 0.85);
     padding: 25px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
+    align-items: center;
+    margin-top: -30px;
 }
 
 
@@ -45,6 +49,7 @@ button {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    width: 100%;
 }
 
 button:hover {
